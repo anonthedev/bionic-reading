@@ -14,7 +14,6 @@ export default function HomePage() {
       bold.push(e.slice(0, Math.round(e.length / 2)));
       normal.push(e.slice(Math.round(e.length / 2)));
     });
-    console.log(bold, normal);
 
     setBoldOutputData(bold);
     setNormalOutputData(normal);
@@ -26,8 +25,12 @@ export default function HomePage() {
   }
 
   return (
-    <div className="w-screen flex justify-center items-center flex-col gap-8 mb-8">
+    <section className="w-screen flex justify-center items-center flex-col gap-8 mb-8">
       <div className="flex flex-col gap-8 h-screen items-center justify-center">
+        <div className="text-center flex flex-col gap-3 mb-4">
+          <h1 className="text-5xl font-raleway font-bold">Bionic Reading</h1>
+          <p className="font-nunito text-xl">Read 10x Faster</p>
+        </div>
         <textarea
           className="border-2 rounded-xl p-4 focus:outline-none bg-gray-100 font-nunito"
           name=""
@@ -67,6 +70,6 @@ export default function HomePage() {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
