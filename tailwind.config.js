@@ -9,7 +9,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nunito: ['var(--font-nunito)'],
+        raleway:['var(--font-raleway)']
+      }
+    },
   },
   plugins: [],
 };
